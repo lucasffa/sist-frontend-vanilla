@@ -1,0 +1,41 @@
+<!-- public/pages/login/index.html -->
+<!-- Não é a versão final. Eu somente coloquei de exemplo, para eu testar o roteamento na Vercel. Fiquem à vontade. -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../triage/index.html">Triage</a>
+        </nav>
+    </header>
+    <main>
+        <section class="login-section">
+            <h2>Bem-vindo! Faça o Login!</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <!-- Aqui, vocês vão precisar de utilizar um script em public/pages/login/script.js, para manipular eventos de submit -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 SIST. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
