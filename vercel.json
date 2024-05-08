@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "src": "/login",
+            "dest": "/public/pages/login/index.html"
+        },
+        {
+            "src": "/triage",
+            "dest": "/public/pages/triage/index.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/public/$1"
+        }
+    ]
+}
