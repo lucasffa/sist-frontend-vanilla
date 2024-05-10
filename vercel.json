@@ -2,19 +2,19 @@
     "routes": [
         {
             "src": "/login",
-            "dest": "/public/pages/login/index.html"
+            "dest": "/pages/login/index.html"
         },
         {
             "src": "/triage",
-            "dest": "/public/pages/triage/index.html"
+            "dest": "/pages/triage/index.html"
         },
         {
             "src": "/menu",
-            "dest": "/public/pages/menu/index.html"
+            "dest": "/pages/menu/index.html"
         },
         {
             "src": "/(.*)",
-            "dest": "/public/$1"
+            "dest": "/$1"
         }
     ]
 }
