@@ -9,6 +9,10 @@
             "dest": "/public/pages/triage/index.html"
         },
         {
+            "src": "/menu",
+            "dest": "/public/pages/menu/index.html"
+        },
+        {
             "src": "/(.*)",
             "dest": "/public/$1"
         }

@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const routes = {
         "/": "/index.html",
         "/login": "/pages/login/index.html",
-        "/triage": "/pages/triage/index.html"
+        "/triage": "/pages/triage/index.html",
+        "/menu": "/pages/menu/index.html",
     };
 
     const navigateTo = (path) => {

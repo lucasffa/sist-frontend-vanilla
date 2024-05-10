@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 20000fr);
+    grid-gap: 10px;
+}
+
+.box {
+    transform: translateX(600%);
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    animation: slideRightToLeft 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    opacity: 1;
+}
+
+.box:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.box:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.box:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.box:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.box:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.box:nth-child(7) {
+    animation-delay: 0.3s;
+}
+
+.box:nth-child(8) {
+    animation-delay: 0.35s;
+}
+
+.box:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.box:nth-child(10) {
+    animation-delay: 0.45s;
+}
+
+.box:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+.box:nth-child(12) {
+    animation-delay: 0.55s;
+}
+
+.box:nth-child(13) {
+    animation-delay: 0.6s;
+}
+
+.box:nth-child(14) {
+    animation-delay: 0.65s;
+}
+
+.box:nth-child(15) {
+    animation-delay: 0.7s;
+}
+
+.box:nth-child(16) {
+    animation-delay: 0.750s;
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        display: grid;
+        opacity: 0;
+        transform: translateX(150%);
+    }
+
+    30% {
+        opacity: 0.457;
+        transform: translateX(0%);
+    }
+
+    70% {
+        opacity: 1;
+        /*
+            Aqui, pode-se remover e colocar em 0 a translação
+        */
+        transform: translateX(0.5%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
